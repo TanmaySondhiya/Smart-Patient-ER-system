@@ -51,3 +51,5 @@ Future Plans:
 1) GUI: Can build a gui for it to meake it more interacctive.
 2) Real dataset: Use a real dataset from a hospital to train the ml model.
 3) Input system: to add the patients in a more interactive method.
+
+Author: Tanmay Sondhiya 25BCE10238
