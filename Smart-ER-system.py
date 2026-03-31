@@ -6,7 +6,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 
 def generate_data(size=10000):
-    np.random.seed(42) 
+    np.random.seed(42)
     temps = np.random.uniform(97.0, 105.0, size)
     pain = np.random.randint(1, 11, size)
     age = np.random.randint(1, 95, size)
@@ -43,8 +43,6 @@ print(f"ML Model Trained. Accuracy: {accuracy * 100:.2f}%")
 patient_queue = []
 
 def triage_patient(name, temp, pain, age):
-    """Predicts priority and adds to the search queue."""
-    # ML Prediction
     input_data = pd.DataFrame([[temp, pain, age]], columns=['Temp', 'Pain', 'Age'])
     pred_priority = int(model.predict(input_data)[0])
     timestamp = time.time()
